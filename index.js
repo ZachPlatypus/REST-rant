@@ -2,6 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+app.use('/places', require('./controllers/places.js'))
+
 app.get('/', (req, res) => {
     res.send('This is text')
 })
