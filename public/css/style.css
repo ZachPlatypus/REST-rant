@@ -7,3 +7,18 @@ h1{
     width: 500px;
     object-fit: contain;
 }
+
+.footer a{
+    color: white;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #007BFF;
+}

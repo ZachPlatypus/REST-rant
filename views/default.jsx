@@ -9,6 +9,7 @@ function Def (html){
             </head>
             <body>
                 {html.children}
+                <footer className="footer"><a href="https://www.linkedin.com/in/zach-platzer/">LinkedIn</a></footer>
             </body>
         </html>
     )
