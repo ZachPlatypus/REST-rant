@@ -1,13 +1,14 @@
 const React = require('react');
 const Def = require('./default');
 
-function home(){
+function error404(){
     return(
         <Def>
             <main>
-                <h1>Home Page</h1>
+                <img src="https://httpstatusdogs.com/img/404.jpg" alt="404 Not Found"></img>
             </main>
         </Def>
     )
 }
-module.exports = home
+
+module.exports = error404;
