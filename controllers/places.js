@@ -49,6 +49,9 @@ router.post('/', (req, res) => {
     if (!req.body.state){
         req.body.state = 'BD'
     }
+    if (!req.body.pic){
+        req.body.pic = `<img src='https://placekitten.com/422/422' alt=${req.body.name}></img>`
+    }
     places.push(req.body)
     res.redirect('/places')
 })

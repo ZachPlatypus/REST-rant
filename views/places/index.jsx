@@ -5,6 +5,7 @@ function index(data){
     let placesFormatted = data.places.map((place) => {
         return(
             <div className='col-sm-6'>
+                <img className='text-center' src={place.pic} alt={place.name}></img>
                 <h2 className='text-center'>
                     <a href={`/places/${index}`}>{place.name}</a>
                 </h2>
