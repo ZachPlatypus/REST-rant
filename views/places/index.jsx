@@ -19,13 +19,7 @@ function index(data){
         <Def>
             <main>
                 <h1>Places Index</h1>
-                <a href="/">
-                    <button className="btn btn-primary">Home</button>
-                </a>
-                <a href="/places/new">
-                    <button className="btn btn-primary">New Place</button>
-                </a>
-                <div className='row'>
+                <div style={{width: '100%'}} className='row'>
                     {placesFormatted}
                 </div>
             </main>
