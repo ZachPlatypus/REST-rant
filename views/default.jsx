@@ -13,7 +13,7 @@ function Def (html){
                 <nav>
                     <ul>
                         <li>
-                            <a className='navbar-brand' href="/">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
                             <a href="/places">Places</a>
