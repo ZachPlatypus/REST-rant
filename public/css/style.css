@@ -3,9 +3,14 @@ h1{
     color: slateblue;
 }
 
-.burgerImg{
+img{
     width: 500px;
-    object-fit: contain;
+}
+
+.centerImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer a{
@@ -21,6 +26,10 @@ h1{
     text-align: center;
     font-weight: bold;
     background-color: #007BFF;
+}
+
+.btmSpace{
+    margin-bottom: 100px;
 }
 
 nav{

@@ -40,7 +40,19 @@ router.delete('/:id', (req, res) => {
         places.splice(id, 1)
         res.redirect('/places')
     }
-}) 
+})
+
+router.get('/:id/edit', (req, res) =>{
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    } else if (!places[id]) {
+        res.render('error404')
+    }
+    else {
+        res.render('places/edit', {place: places[id]})
+    }
+})
 
 router.post('/', (req, res) => {
     if (!req.body.city){
@@ -50,7 +62,7 @@ router.post('/', (req, res) => {
         req.body.state = 'BD'
     }
     if (!req.body.pic){
-        req.body.pic = `<img src='https://placekitten.com/422/422' alt=${req.body.name}></img>`
+        req.body.pic = 'https://placekitten.com/422/422'
     }
     places.push(req.body)
     res.redirect('/places')
