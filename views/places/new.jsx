@@ -10,25 +10,30 @@ function new_form(){
                     <div className='row'>
                         <div className='form-group col-sm-6'>
                             <label htmlFor='name'>Place Name</label>
-                            <input className='form-control' id="name" name="name" required></input>
+                            <input className='form-control' id="name" name="name" required />
                         </div>
                         <div className='form-group col-sm-6'>
-                            <label htmlFor='pic'>Picture</label>
-                            <input type="url" className='form-control' id="pic" name="pic"></input>
+                            <label htmlFor='founded'>Founded Year</label>
+                            <input className='form-control' id="founded" name="founded" />
                         </div>
+                        
                         <div className='form-group col-sm-6'>
                             <label htmlFor='city'>City</label>
-                            <input className='form-control' id="city" name="city"></input>
+                            <input className='form-control' id="city" name="city" />
                         </div>
                         <div className='form-group col-sm-6'>
                             <label htmlFor='state'>State</label>
-                            <input className='form-control' id="state" name="state"></input>
+                            <input className='form-control' id="state" name="state" />
+                        </div>
+                        <div className='form-group'>
+                            <label htmlFor='pic'>Picture</label>
+                            <input type="url" className='form-control' id="pic" name="pic" />
                         </div>
                         <div className='form-group'>
                             <label htmlFor='food'>Food Types</label>
-                            <input className='form-control' id="food" name="food" required></input>
+                            <input className='form-control' id="food" name="food" required />
                         </div>
-                        <input className='btn btn-primary' type='submit' value='Add Place'></input>
+                        <input className='btn btn-primary' type='submit' value='Add Place' />
                     </div>
                 </form>
             </main>
